@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:receipe_book/screens/audio_playerpage.dart';
 import 'package:receipe_book/screens/item_detailpage.dart';
+import 'package:receipe_book/screens/search_screen.dart';
 import '../bloc/food_bloc.dart';
 import '../model/food_model.dart';
 import '../widgets/appbar_tiitle.dart';
@@ -87,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: GestureDetector(
-        onTap: () => null, //SearchScreen.show(context),
+        onTap: () => SearchScreen.show(context),
         child: Container(
           height: 45.0,
           padding: EdgeInsets.symmetric(horizontal: 8.0),

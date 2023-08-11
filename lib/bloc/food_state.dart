@@ -20,6 +20,9 @@ class FoodLoading extends FoodState {}
 class FoodLoaded extends FoodState {
   final FoodModel foodModel;
   const FoodLoaded(this.foodModel);
+
+  @override
+  List<Object> get props => [];
 }
 
 class FoodError extends FoodState {

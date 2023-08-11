@@ -9,6 +9,13 @@ class ApiRepository {
   Future<FoodModel> fetchFoodList() {
     return _provider.fetchFoodList();
   }
+
+
+  Future<FoodModel> searchFoodList(String food) {
+    return _provider.searchFoodList(food);
+  }
+
+
 }
 
 class NetworkError extends Error {}

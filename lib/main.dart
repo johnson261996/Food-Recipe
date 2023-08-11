@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:receipe_book/screens/auth_page.dart';
 import 'package:receipe_book/screens/homepage.dart';
+import 'package:receipe_book/searchbloc/search_bloc.dart';
 
 import 'bloc/food_bloc.dart';
 
@@ -13,6 +14,9 @@ void main() {
               create: (context) => FoodBloc(),
             ),
             // Other BlocProviders if needed
+            BlocProvider<SearchBloc>(
+              create: (context) => SearchBloc(),
+            ),
           ],
 
       child: MyApp()));
